@@ -129,6 +129,6 @@ class Patient{
 	
 	@Override
 	public String toString(){
-		return "Patient info: \nName: " + buildFullName() + "\nAddress: " + buildAddress() + "\nEmergency Contact: " + buildEmergencyContact();
+		return "Patient info: \nName: " + buildFullName() + "\nAddress: " + buildAddress() + "Phone Number: " + pN + "\nEmergency Contact: " + buildEmergencyContact();
 	}
 }
