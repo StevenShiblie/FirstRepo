@@ -1,34 +1,28 @@
 
-
-
-import java.io.IOException;
 import javafx.application.Application;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-
+/**
+ * The main method for the GUI example program JavaFX version
+ * 
+ * @author Farnaz Eivazi
+ * @version 7/11/2022 *
+ */
 public class FXDriver extends Application {
-	   
-	/**
-	 * The main method for the GUI example program JavaFX version
-	 * @param args not used
-	 * @throws IOException
-	 */
+
+	
 	public static void main(String[] args) {
-		launch(args);   
+		launch(args);
 	}
-		   
+
 	@Override
-	public void start(Stage stage) throws IOException {
-		//student Task #1:
-		//  instantiate the FXMainPane, name it root
+	public void start(Stage stage) throws Exception {
+		// call the main scene which is a BorderPane
 		FXMainPane root = new FXMainPane();
-		//  set the scene to hold root
-		stage.setScene(new Scene(root, 350, 350));
-		//set stage title
-		stage.setTitle("Hello World GUI");
-		//display the stage
+		stage.setScene(new Scene(root, 600, 350));
+		// Set stage title and show the stage.
+		stage.setTitle("Cybersecurity Encryption and Decryption");
 		stage.show();
 
 	}
